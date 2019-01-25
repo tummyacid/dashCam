@@ -45,7 +45,7 @@ try:
     #TODO: handle more than one request, keep camera open, detect appropriate shutdown event
     server.handle_request()
     print('Stopped httpserver preview' )
-    #Wait forever for incoming htto requests
+    print('Starting time lapse at interval ' + str(WAIT_TIME) )
     timelapse(WAIT_TIME)
 
 except KeyboardInterrupt:
